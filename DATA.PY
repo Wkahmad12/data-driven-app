@@ -44,7 +44,7 @@ def open_abt():
 root = Tk()
 root.geometry("700x400")
 root.title('CC')
-
+root.resizable(width=False, height=False)
 
 backg_image = Image.open('finance-background-lmbrnieyixwr61g9.jpg')
 backg_image = backg_image.resize((700, 400))

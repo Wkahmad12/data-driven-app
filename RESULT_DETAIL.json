@@ -52,4 +52,10 @@
   "to": "AFN",
   "amount": 222.0,
   "Amount_converted": 4286.82
+}{
+  "timestamp": "2024-01-14 17:35:23",
+  "from": "AED",
+  "to": "PKR",
+  "amount": 20000.0,
+  "Amount_converted": 1529199.9999999998
 }
