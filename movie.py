@@ -1,8 +1,7 @@
 import requests
 from tkinter import Entry, Button, Frame, Scrollbar, Text, Label, messagebox
 from PIL import Image, ImageTk
-import PIL
-print("Pillow version:", PIL.__version__)
+
 import tkinter as tk
 from tkinter import Listbox, OptionMenu, StringVar
 
@@ -102,6 +101,7 @@ def display_results(movies):
 king = tk.Tk()
 king.title("Movie recommendation")
 king.geometry("600x500")
+king.resizable(False, False)
 #frame 1 
 frame = Frame(king)
 #background image
@@ -109,10 +109,10 @@ pic_frame = ImageTk.PhotoImage(Image.open("R (2).jpeg"))
 pic_label = Label(frame, image=pic_frame)
 pic_label.place(x=0, y=0, width=600, height=500)
 #button of start
-but1 = Button(frame, text="Start", command=page_one, border=5)
+but1 = Button(frame, text="Start", command=page_one, border=15)
 but1.place(x=220, y=350, width=170)
 #button of about
-but2 = Button(frame, text="ABOUT", command=click_this, border=5, bg="red")
+but2 = Button(frame, text="ABOUT", command=click_this, border=15, bg="red")
 but2.place(x=220, y=410, width=170)
 #end of frame
 frame.place(x=0, y=0, width=600, height=500)
@@ -129,7 +129,7 @@ tt.place(x=0, y=0, width=600, height=60)# place use for allignment
 Sbar_input = Entry(frame1, font=('Arial', 12), bd=5)
 Sbar_input.place(x=200, y=70, width=200)
 #serch button
-btn = Button(frame1, text="Search", command=On_search, bd=5,bg="lightgrey",fg="white")
+btn = Button(frame1, text="Search", command=On_search, bd=5,bg="lightgrey",fg="black")
 btn.place(x=420, y=70, width=70)
 
 
